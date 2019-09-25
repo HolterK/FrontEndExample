@@ -1,0 +1,249 @@
+:root {
+    --grey: #f3f3f3;
+    --textGrey: #999;
+    --orange: #ff6600;
+    --shadow: 1px 1px #DDD;
+}
+
+p {
+    margin:0;
+}
+
+body {
+    background-color: var(--grey);
+}
+
+.App {
+    position:relative;
+    margin: 0 20% 0 20%;
+    font-family:'Open Sans', sans;
+    background-color: var(--grey);
+}
+
+img {
+    border-radius: 100%;
+    height:60px;
+    width:60px;
+}
+
+button {
+    background-color: var(--orange);
+    color: white;
+    padding: .5rem 1rem;
+    border: none;
+    border-radius: .2rem;
+    font-size: .8rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+/*Font classes*/
+.mainHeader h1 {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.subHeader {
+    margin: 0;
+    font-weight: 400;
+    color: var(--textGrey);
+    margin-bottom: 0;
+}
+
+.heavy {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.orange {
+    color: var(--orange);
+}
+
+.strong {
+    font-weight:600;
+}
+
+.grey {
+    color:var(--textGrey);
+}
+
+.larger {
+    font-size:larger;
+}
+
+.smaller {
+    font-size:smaller;
+}
+
+/*Percentage wheels*/
+.wheels {
+    display: flex;
+    margin-top: 2rem;
+    justify-content: space-evenly;
+}
+
+.wheelWrapper {
+    align-content: center;
+    text-align: center;
+}
+
+.wheelCaption {
+    margin-top: 1.5rem;
+}
+
+/*User menu*/
+.menu{
+    padding: 1.5rem;
+    cursor: pointer;
+    margin-bottom:1.5rem;
+    font-size:.8rem;
+    font-weight:600;
+}
+
+.menu span {
+    padding: .5rem 0;
+    margin: 0 1rem;
+}
+
+.active {
+    color: var(--orange);
+    border-bottom: 4px solid var(--orange);
+    font-weight: 600;
+}
+
+/*App containers*/
+
+.employeeContainer {
+    position:relative;
+    display: flex;
+    padding: .5rem 1rem;
+    margin: 1em 0;
+    cursor: pointer;
+    align-content: center;
+    font-size: .7em;
+    background-color: white;
+    box-shadow: var(--shadow);
+    align-items:center;
+}
+
+.employeeContainer .circleWrapper,{
+    margin: 0 1rem 0 0;
+}
+
+.employeeInfo {
+    margin-left:1rem;
+}
+
+.employeeNext {
+    position: absolute;
+    left: 25rem;
+}
+
+.employeeTasks {
+    position: absolute;
+    right: 10rem;
+    text-align:center;
+}
+
+.container {
+    position: relative;
+    padding:0 1rem;
+    background-color: white;
+    box-shadow: var(--shadow);
+}
+
+.tasks {
+    height:18rem;
+    width: 45%;
+    position:absolute;
+    top:1rem;
+    left:0;
+}
+
+.talks {
+    height:18rem;
+    width:45%;
+    position:absolute;
+    top:1rem;
+    right:0;
+}
+
+.employees {
+    position:absolute;
+    width:100%;
+    top:24rem;
+    padding-bottom: 5rem;
+}
+
+.header {
+    display:block;
+}
+
+.talksWrapper{
+    display:flex;
+    text-align:center;
+    margin-bottom:1rem;
+}
+
+.planned  {
+    flex: 2;
+}
+
+.nextTalk {
+    display:flex;
+    align-items:center;
+    margin-top:.5rem;
+}
+
+.nextTalk img {
+    margin: 0 1rem 0 0;
+}
+
+.taskContainer {
+    position: relative;
+    padding: .5rem 1rem;
+    margin: 1em 0;
+    font-size: .7rem;
+    cursor: pointer;
+    align-content: center;
+    background-color: white;
+    box-shadow: var(--shadow);
+    align-items: center;
+}
+
+.taskContainer:hover .icons {
+    display:block;
+}
+
+.icons {
+    display:none;
+    font-size: 18px;
+    color: var(--textGrey);
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+}
+
+.user {
+    font-size: .8rem;
+    padding: 1rem;
+}
+.user span {
+    margin-right: 1rem;
+}
+
+.missingContainer {
+    position: relative;
+    padding: 2rem 1rem;
+    margin: 1em 0;
+    font-size: .7rem;
+    cursor: pointer;
+    align-content: center;
+    background-color: white;
+    box-shadow: var(--shadow);
+    align-items: center;
+}
+

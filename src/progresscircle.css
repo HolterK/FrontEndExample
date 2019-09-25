@@ -1,0 +1,51 @@
+
+.circleWrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.outerCircle {
+    display: flex;
+    position: relative;
+    background-color: red;
+    border-radius: 100%;
+}
+
+.innerCircle{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background-color: #fff;
+    height: 85%;
+    width: 85%;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #CCC;
+    font-size: 2em;
+    font-weight: 600;
+}
+.innerCircle img {
+    height:95%;
+    width:95%;
+}
+.large{
+    height:7rem;
+    width:7rem;
+}
+
+.large .innerCircle {
+    height:90%;
+    width:90%;
+}
+
+.small {
+    height: 4rem;
+    width: 4rem;
+}
